@@ -59,6 +59,6 @@ I welcome contributions to improve this portfolio website! If you have suggestio
 
 # Contact
 
-If you have any questions or would like to get in touch, please feel free to contact me through the contact form on the website or via email at your-email@example.com.
+If you have any questions or would like to get in touch, please feel free to contact me through the contact form on the website or via email at giftyaningg@gmail.com.
 
 Thank you for visiting my portfolio website!
