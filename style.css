@@ -1,0 +1,24 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #151515;
+}
+
+/* Typography */
+:root{
+    /* colors */
+    --white-color: #ffff;
+    --green-color: #4ee1a0;
+    --dark-grey-color: #242424;
+    --grey-color: #d9d9d9;
+    --black-color: #151515;
+    
+    /* Font sizes */
+    --heading-xl: 88px;
+    --heading-l: 48px;
+    --heading-m: 24px;
+    --paragraph: 18px;
+}
