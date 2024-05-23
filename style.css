@@ -68,4 +68,7 @@ body{
 
 }
 
-/* Mobile */
+/* Mobile View */
+@media(max-width: 768px) {
+   
+}
