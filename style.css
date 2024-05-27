@@ -124,6 +124,12 @@ body{
         margin-top: 1.2em;
         margin-bottom: 7em;
     }
+    
+    #circle img {
+        position: absolute;
+        right: -5em;
+        top: 22em;
+    }
 
     /* End of HERO */
 }
