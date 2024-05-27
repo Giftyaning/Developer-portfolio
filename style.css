@@ -50,13 +50,11 @@ body{
 /* CONTAINER */
 .container{
     position: relative;
-    background-color: #242424;
     height: 100vh;
     width: 100%;
     padding: .5em 2em;
     z-index: 1;
     color: #ffff;
-    opacity: 0.5;
     margin: 0;
 }
 
@@ -88,5 +86,10 @@ body{
 
 /* MOBILE VIEW */
 @media(max-width: 768px) {
-   
+   .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
 }
