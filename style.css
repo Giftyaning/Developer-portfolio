@@ -20,7 +20,7 @@ body {
     /* Mobile Font sizes */
     --mobile-heading-xl: 4rem;
     --mobile-heading-l: 2rem;
-    --mobile-heading-m: 1.5rem;
+    --mobile-heading-m: 1.3rem;
     --mobile-paragraph: 1.2rem;
 
 }
@@ -124,9 +124,11 @@ body {
         opacity: 0.6;
         margin-top: -2em;
     }
-
-    #hero .main-content-contact {
+    
+    .contact{
         font-size: var(--mobile-heading-m);
+    }
+    #hero .contact {
         display: flex;
         justify-content: center;
         margin-top: 1.2em;
@@ -142,7 +144,7 @@ body {
     /* End of HERO */
 
     /* SKILLS */
-    #skills .heading{
+    .heading{
         font-size: var(--mobile-heading-l);
     }
     #skills p{
@@ -150,4 +152,41 @@ body {
         opacity: 0.6;
         margin-top: -1em;
     }
+    /* End of SKILLS */
+
+    /* PROJECTS*/
+    #projects .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        font-size: var(--mobile-heading-l);
+    }
+    #projects .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin-top: 3em;
+    }
+    #projects .card img {
+        width: 100%;
+    }
+    #projects .card-skills{
+        display: flex;
+        margin-top: .7em;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 30%;
+        opacity: 0.6;
+        font-size: var(--mobile-paragraph);
+    }
+    .project-display{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.9em;
+        width: 60%;
+        font-size: var(--mobile-heading-m);
+    }
 }
+
