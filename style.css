@@ -3,24 +3,24 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #151515;
     padding: 0 1.5em;
 }
 
 /* TYPOGRAPHY */
-:root{
+:root {
     /* colors */
     --white-color: #ffff;
     --green-color: #4ee1a0;
     --dark-grey-color: #242424;
     --grey-color: #d9d9d9;
     --black-color: #151515;
-    
+
     /* Mobile Font sizes */
     --mobile-heading-xl: 4rem;
-    --mobile-heading-l: 48px;
-    --mobile-heading-m: 24px;
+    --mobile-heading-l: 2rem;
+    --mobile-heading-m: 1.5rem;
     --mobile-paragraph: 1.2rem;
 
 }
@@ -28,7 +28,7 @@ body{
 /* End of TYPOGRAPHY */
 
 /* BACKGROUND */
-.background img{
+.background img {
     margin-top: 3.5em;
     margin-left: -18em;
     position: absolute;
@@ -46,10 +46,11 @@ body{
     right: 0;
     top: 50em;
 }
+
 /* End of BACKGROUNDS */
 
 /* CONTAINER */
-.container{
+.container {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -63,7 +64,7 @@ body{
 /* End of CONTAINER */
 
 /* HERO */
-.hero{
+.section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,51 +81,57 @@ body{
 
 /* MOBILE VIEW */
 @media(max-width: 768px) {
+
     /* HERO */
-    .hero .top{
+    #hero .top {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 1em;
     }
-    .socials{
+
+    .socials {
         display: flex;
         justify-content: space-between;
         width: 15rem;
     }
-    #mobile-profile-image{
+
+    #mobile-profile-image {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    #mobile-profile-image img{
+
+    #mobile-profile-image img {
         width: 65%;
         height: auto;
         margin-top: -7em;
     }
-    .hero .main-content{
+
+    #hero .main-content {
         display: flex;
         flex-direction: column;
     }
-    .hero .main-content h1{
+
+    #hero .main-content h1 {
         font-size: var(--mobile-heading-xl);
     }
-    .hero .main-content p {
+
+    #hero .main-content p {
         font-size: var(--mobile-paragraph);
         opacity: 0.6;
         margin-top: -2em;
     }
 
-    .hero .main-content-contact{
+    #hero .main-content-contact {
+        font-size: var(--mobile-heading-m);
         display: flex;
         justify-content: center;
-    }
-    .hero .main-content-contact{
         margin-top: 1.2em;
-        margin-bottom: 7em;
+        margin-bottom: 4em;
     }
-    
+
     #circle img {
         position: absolute;
         right: -5em;
