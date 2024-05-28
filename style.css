@@ -139,4 +139,13 @@ body {
     }
 
     /* End of HERO */
+
+    /* SKILLS */
+    #skills .heading{
+        font-size: var(--mobile-heading-l);
+    }
+    #skills p{
+        font-size: var(--mobile-paragraph);
+        opacity: 0.6;
+    }
 }
