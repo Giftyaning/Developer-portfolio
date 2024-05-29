@@ -70,7 +70,7 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 1.5em;
-    margin-top: 2.2em;
+    margin-top: 2.5em;
 }
 
 
@@ -84,6 +84,10 @@ body {
 @media(max-width: 768px) {
 
     /* HERO */
+    .title{
+        font-size: var(--mobile-heading-l);
+    }
+
     #hero .top {
         display: flex;
         justify-content: center;
@@ -160,7 +164,6 @@ body {
         justify-content: space-between;
         align-items: flex-start;
         width: 90%;
-        font-size: var(--mobile-heading-l);
     }
     #projects .card {
         display: flex;
@@ -187,6 +190,27 @@ body {
         margin-top: 1.9em;
         width: 60%;
         font-size: var(--mobile-heading-m);
+    }
+
+    /* Contact */
+    .contact-top{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(104, 83, 83, .05);
+        padding: 2em 2em;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-form input, textarea{
+        padding: 2.2em;
+        border: none;
+        border-bottom: .1em solid #fff;
+        border-radius: 0;
+        background-color: rgb(104, 83, 83, 0);
     }
 }
 
