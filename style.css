@@ -21,6 +21,7 @@ body {
     --mobile-heading-xl: 4rem;
     --mobile-heading-l: 2rem;
     --mobile-heading-m: 1.3rem;
+    --mobile-heading-s: 1.2rem;
     --mobile-paragraph: 1.2rem;
 
 }
@@ -192,7 +193,9 @@ body {
         font-size: var(--mobile-heading-m);
     }
 
-    /* Contact */
+    /* End of PROJECTS */
+
+    /* CONTACT */
     .contact-top{
         display: flex;
         align-items: center;
@@ -206,11 +209,30 @@ body {
         width: 100%;
     }
     .contact-form input, textarea{
-        padding: 2.2em;
+        padding: 2.3em 2EM;
         border: none;
         border-bottom: .1em solid #fff;
         border-radius: 0;
         background-color: rgb(104, 83, 83, 0);
+        font-size: var(--mobile-heading-s);
+    }
+
+    #contact .button-container{
+        display: flex;
+        justify-content: end;
+        padding: 2em 0;
+        margin-bottom: 6em;
+    }
+    #contact .button-container button{
+        border: none;
+        background-color: rgb(104, 83, 83, 0);
+        border-bottom: .1em solid #4ee1a0;
+        font-size: var(--mobile-heading-m);
+        color: #fff;
+        line-height: 2em;
     }
 }
+
+/* End of CONTACT */
+
 
