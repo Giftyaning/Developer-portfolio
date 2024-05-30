@@ -278,7 +278,59 @@ body {
     }
     /* End of PROJECTS  */
 
-    
+
+    /* CONTACTS */
+    .contact-top {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(104, 83, 83, .05);
+        padding: 2em 2em;
+    }
+    .contact-top .title{
+        font-size: var(--tablet-heading-l);
+        font-weight: var(--tablet-heading-l-font-weight);
+    }
+    .contact-top p{
+        opacity: .6;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-form input,
+    textarea {
+        padding: 2.3em 2EM;
+        border: none;
+        border-bottom: .1em solid #fff;
+        border-radius: 0;
+        background-color: rgb(104, 83, 83, 0);
+        font-size: var(--mobile-heading-s);
+    }
+    #contact .button-container {
+        display: flex;
+        justify-content: end;
+        padding: 2em 0;
+        margin-bottom: 6em;
+    }
+    #contact .button-container button {
+        border: none;
+        background-color: rgb(104, 83, 83, 0);
+        border-bottom: .1em solid #4ee1a0;
+        font-size: var(--mobile-heading-m);
+        color: #fff;
+        line-height: 2em;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0 0 5em 0;
+    }
+    /* End of CONTACTS */
+
 }
 
 
