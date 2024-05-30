@@ -53,12 +53,25 @@ body {
     gap: 1.5em;
     margin-top: 2.5em;
     margin-bottom: 2em;
+    width: 100%;
 }
 /* End of SECTION */
 
-
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+}
 
 /* HERO */
+
+#hero .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
 
 /* End of HERO */
 
@@ -111,7 +124,40 @@ body {
 
     /* HERO */
     #hero{
-       
+        background-color: coral;
+    }
+    #hero .top{
+       flex-direction: row;
+       align-items: flex-start;
+       position: relative;
+       width: 100%;
+    }
+    #hero .top .nav{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20em;
+    }
+    #mobile-profile-image {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    #mobile-profile-image img {
+        width: 40%;
+        height: auto;
+    }
+    #mobile-profile-image .mobile{
+        display: none;
+    }
+    #circle img {
+        position: absolute;
+        right: 20em;
+        top: 26em;
     }
     /* End of HERO */
 }
@@ -160,6 +206,13 @@ body {
         flex-direction: column;
         gap: 1em;
     }
+    #hero .top .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
     .socials {
         display: flex;
         justify-content: space-between;
@@ -175,9 +228,15 @@ body {
         height: auto;
         margin-top: -7em;
     }
+    #mobile-profile-image .tablet {
+        display: none;
+    }
     #hero .main-content {
         display: flex;
         flex-direction: column;
+    }
+    #hero .main-content-name {
+        border-bottom: .1em solid #4ee1a0;
     }
     #hero .main-content h1 {
         font-size: var(--mobile-heading-xl);
@@ -198,7 +257,6 @@ body {
         margin-top: 1.2em;
         margin-bottom: 4em;
         font-size: var(--mobile-heading-m);
-        border-bottom: .1em solid #4ee1a0;
     }
     #circle img {
         position: absolute;
