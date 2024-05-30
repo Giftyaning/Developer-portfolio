@@ -186,6 +186,7 @@ body {
         flex-direction: column;
         gap: 1em;
         width: 70%;
+        margin-top: 2em;
     }
     #hero .main-content h1 {
         font-size: var(--tablet-heading-xl);
@@ -197,6 +198,20 @@ body {
         max-width: 80%;
     }
     /* End of HERO */
+
+    /* SKILLS */
+    #skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        gap: 3em;
+        max-height: 50em;
+    }
+    #skills .heading{
+        font-size: var(--tablet-heading-l);
+        font-weight: var(--tablet-heading-l-font-weight);
+    }
+    /* End of SKILLLS */
 }
 
 
@@ -311,6 +326,12 @@ body {
         font-size: var(--mobile-paragraph);
         opacity: 0.6;
         margin-top: -1em;
+    }
+    #skills .skill-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
     }
     /* End of SKILLS */
 
