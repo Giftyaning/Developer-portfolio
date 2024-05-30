@@ -92,6 +92,11 @@ body {
     gap: 1em;
 }
 
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* End of HERO */
 
 
@@ -140,6 +145,12 @@ body {
         margin-top: -20em;
     }
     /* End of BACKGROUNGS */
+
+    /* IMAGE DISPLAYS */
+    .mobile-image{
+        display: none;
+    }
+    /* End of IMAGE DISPLAYS */
 
     /* HERO */
     #hero .top{
@@ -212,6 +223,62 @@ body {
         font-weight: var(--tablet-heading-l-font-weight);
     }
     /* End of SKILLLS */
+
+    /* PROJECTS */
+    #projects .title {
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        width: 90%;
+        font-weight: var(--tablet-heading-l-font-weight);
+        font-size: var(--tablet-heading-l);
+    }
+    #projects .title .contact {
+        font-weight: var(--tablet-heading-m-font-weight);
+        border-bottom: .1em solid #4ee1a0;
+    }
+    #projects .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #projects .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+    
+    #projects .card img {
+        width: 100%;
+    }
+    
+    #projects .card-skills {
+        display: flex;
+        margin-top: .7em;
+        justify-content: flex-start;
+        gap: 2em;
+        width: 80%;
+        opacity: 0.6;
+        font-size: var(--mobile-paragraph);
+    }
+    
+    .project-display {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2em;
+        margin-top: 1.9em;
+        width: 60%;
+        font-size: var(--mobile-heading-m);
+    }
+    
+    .project-display .display {
+        border-bottom: .1em solid #4ee1a0;
+    }
+    /* End of PROJECTS  */
+
+    
 }
 
 
@@ -245,6 +312,12 @@ body {
     }
 
     /* End of BACKGROUNDS */
+
+    /* IMAGE DISPLAYS */
+    .large-image {
+        display: none;
+    }
+    /* End of IMAGE DISPLAYS */
 
 
     /* HERO */
@@ -336,7 +409,7 @@ body {
     /* End of SKILLS */
 
 
-    /* PROJECTS*/
+    /* PROJECTS */
     #projects .title{
         display: flex;
         justify-content: flex-start;
@@ -377,6 +450,9 @@ body {
     }
     .project-display .display{
         border-bottom: .1em solid #4ee1a0;
+    }
+    .cards{
+        flex-direction: column;
     }
     /* End of PROJECTS */
 
