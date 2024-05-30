@@ -56,6 +56,8 @@ body {
 }
 /* End of SECTION */
 
+
+
 /* HERO */
 
 /* End of HERO */
@@ -83,8 +85,35 @@ body {
 
 
 /* Tablet View */
-@media(max-width: 1024px) and (max-width: 768px){
+@media(max-width: 1024px) and (min-width: 768px){
+    /* BACKGROUND TABLET */
+    .background img{
+        margin-top: 4.5em;
+        margin-left: -18em;
+        position: absolute;
+        opacity: .5;
+    }
+    #background1 {
+        position: relative;
+        width: 100vw;
+        height: auto;
+    }
+    #background1 img {
+        position: absolute;
+        right: 0;
+        top: 35em;
+        margin-right: -10em;
+    } 
+    #bottom-background img {
+        margin-top: -20em;
+    }
+    /* End of BACKGROUNGS */
 
+    /* HERO */
+    #hero{
+       
+    }
+    /* End of HERO */
 }
 
 
