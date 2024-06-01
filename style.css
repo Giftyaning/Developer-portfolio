@@ -19,6 +19,8 @@ body {
 
     /* MOBILE TYPOGRAPHY */
 
+    
+
     /* Mobile Font Sizes */
     --mobile-heading-xl: 4rem;
     --mobile-heading-l: 2rem;
@@ -46,6 +48,11 @@ body {
         --tablet-heading-m-font-weight: 300;
 
     /* End of TABLET TYPOGRAPHY */
+}
+
+/* HEADINGS */
+h1 {
+    font-size: clamp(5.7rem, 2vw, 3rem);
 }
 
 /* End of TYPOGRAPHY */
@@ -200,7 +207,6 @@ body {
         margin-top: 2em;
     }
     #hero .main-content h1 {
-        font-size: var(--tablet-heading-xl);
         display: flex;
         flex-direction: column;
     }
@@ -414,9 +420,6 @@ body {
     }
     #hero .main-content-name {
         border-bottom: .1em solid #4ee1a0;
-    }
-    #hero .main-content h1 {
-        font-size: var(--mobile-heading-xl);
     }
     #hero .main-content p {
         font-size: var(--mobile-paragraph);
