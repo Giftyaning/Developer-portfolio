@@ -63,6 +63,19 @@ body {
 
 
 /* Hero Section */
+  .hero{
+    height: auto;
+    width: 100%;
+    padding: .2em;
+  }
+
+  /* Navbar */
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
