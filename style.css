@@ -9,6 +9,18 @@ body {
   color: #ffff;
 }
 
+.container{
+  height: auto;
+  width: 100%;
+  padding: .5em;
+}
+
+section{
+  height: auto;
+  width: 100%;
+  margin-bottom: 5em;
+}
+
 /* Typography */
 
   /* Headings */
@@ -75,18 +87,42 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
+  .socials{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+  }
+
+  .mobile-profile, .tablet-profile{
+    display: none;
+  }
+  /* End of Navbar */
 
 
 
 /* Tablet View */
 @media (max-width: 1024px) and (min-width: 768px) {
+  .tablet-profile{
+    display: block;
+  }
+  .mobile-profile, .desktop-profile{
+    display: none;
+  }
 }
 
 /* MOBILE VIEW */
 @media (max-width: 768px) {
-
+/* Navbar */
+  nav{
+    flex-direction: column;
+  }
    
-
+  .mobile-profile{
+    display: block;
+  }
     
+  .tablet-profile, .desktop-profile{
+    display: none;
+  }
 }
