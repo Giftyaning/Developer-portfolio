@@ -116,7 +116,7 @@ section{
   .skills-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);   
-    gap: 3em;
+    gap: 4em;
   }
   .skill{
     display: flex;
@@ -124,6 +124,27 @@ section{
     align-items: center;
   }
 /* End of Skills Section/
+
+ /* Projects Section */
+    .project-list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
+    }
+    .project img{
+      width: 100%;
+      height: auto;
+    }
+    .projects .top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .project #small-thumbnail{
+      display: none;
+    }
+  /* End of Projects Section */
+
 
 /* Tablet View */
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -192,4 +213,34 @@ section{
       }
       
   /* End of Skills Section */
+
+
+  /* Projects Section */
+    .project-list{
+      display: inline;
+    }
+    .project{
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 3em;
+    }
+    .project img{
+      width: 100%;
+      height: auto;
+    }
+    .project #large-thumbnail{
+      display: none;
+    }
+    .project #small-thumbnail{
+      display: block;
+    }
+    .project-skills, .select-options{
+      display: flex;
+      gap: 4em;
+      padding: 0;
+      margin-bottom: 2em;
+    }
+   
+  /* End of Projects Section */
+
 }
