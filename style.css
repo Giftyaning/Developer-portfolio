@@ -21,6 +21,12 @@ section{
   margin-bottom: 5em;
 }
 
+.mobile-hr{
+  display: none;
+}
+
+
+
 /* Typography */
 
   /* Headings */
@@ -29,6 +35,7 @@ section{
   }
   h2 {
     font-size: clamp(2.7rem, 2vw, 1rem);
+    font-weight: 200;
   }
   h3 {
     font-size: clamp(1.7rem, 2vw, 1rem);
@@ -57,6 +64,8 @@ section{
 
 /* End of Typography */
 
+
+/* Desktop view */
 
 /* Hero Section */
   .hero{
@@ -92,7 +101,7 @@ section{
     display: block;
     max-height: 45em;
   }
-  h3, .header .name{
+  .name, .contact{
     border-bottom: 3px solid #4ee1a0;
   }
   .description{
@@ -101,8 +110,20 @@ section{
     flex-direction: column;
     justify-content: center;
   }
-
 /* End of Hero Section
+
+/* Skills Section */
+  .skills-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    gap: 3em;
+  }
+  .skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+/* End of Skills Section/
 
 /* Tablet View */
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -120,35 +141,55 @@ section{
     display: block;
     max-height: 35em;
   }
+  .skills-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+    
+  }
   
 
 }
 
+
 /* MOBILE VIEW */
 @media (max-width: 768px) {
-/* Navbar */
+  /* Navbar */
   nav{
     flex-direction: column;
   }
-   
-/* Profile images */
-  .mobile-profile{
+  
+  .mobile-hr{
     display: block;
   }
-  .tablet-profile, .desktop-profile{
-    display: none;
-  }
-/* End of Profile images */
 
-/* Main content */
-  .main-content{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .mobile-profile img{
-    max-height: 25em;
-  }
+  /* Hero Section */
+
+    /* Profile images */
+      .mobile-profile{
+        display: block;
+      }
+      .tablet-profile, .desktop-profile{
+        display: none;
+      }
+    /* End of Profile images */
+
+    /* Main content */
+      .main-content, .description{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .mobile-profile img{
+        max-height: 25em;
+      }
+  /* End of Hero Section */
   
-
+  /* Skills Section */
+      .skills-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+  /* End of Skills Section */
 }
