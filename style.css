@@ -29,17 +29,17 @@ section{
   }
   h2 {
     font-size: clamp(2.7rem, 2vw, 1rem);
-    display: none;
   }
   h3 {
     font-size: clamp(1.7rem, 2vw, 1rem);
-    display: none;
   }
   
 
   /* Paragraphs */
   p {
-    font-size: clamp(1.7rem, 2vw, 1rem);
+    font-size: clamp(1.4rem, 2vw, 1rem);
+    font-weight: 100;
+    opacity: .5;
   }
 
   :root {
@@ -86,9 +86,23 @@ section{
   /* Main contents */
   .main-content{
     display: flex;
+    margin-top: 3em;
+  }
+  .desktop-profile img{
+    display: block;
+    max-height: 45em;
+  }
+  h3, .header .name{
+    border-bottom: 3px solid #4ee1a0;
+  }
+  .description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-
+/* End of Hero Section
 
 /* Tablet View */
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -100,6 +114,14 @@ section{
     display: none;
   }
   /* End of Profile images */
+
+  /* Main content */
+  .tablet-profile img{
+    display: block;
+    max-height: 35em;
+  }
+  
+
 }
 
 /* MOBILE VIEW */
@@ -125,8 +147,8 @@ section{
     align-items: center;
   }
   .mobile-profile img{
-    height: 25em;
+    max-height: 25em;
   }
-
+  
 
 }
