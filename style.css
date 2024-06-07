@@ -152,9 +152,14 @@ section{
         gap: 4em;
         padding: 0;
         margin-bottom: 2em;
+        opacity: .5;
     }
     .select-options{
       display: none;
+    }
+    .select-options li{
+      border: 0;
+      border-bottom:1px solid #4ee1a0;
     }
   /* End of Projects Section */
 
@@ -218,20 +223,23 @@ section{
 
   /* Projects Section */
     .project-images{
-        padding: 0;
-        max-width: 100%;
+      padding: 0;
+      max-width: 100%;
     }
-    .project-skills, .select-options{
-        display: flex;
-        gap: 4em;
-        padding: 0;
-        margin-bottom: 2em;
+    .select-options{
+      display: flex;
+      gap: 4em;
+      padding: 0;
+      margin-bottom: 2em;
     }
   /* End of Projects Section */
+
   /* Contact Section */
     .contact{
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .contact-description{
       display: flex;
@@ -322,6 +330,8 @@ section{
     .contact{
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .contact-description{
       display: flex;
