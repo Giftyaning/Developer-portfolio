@@ -147,6 +147,15 @@ section{
     .project #small-thumbnail{
       display: none;
     }
+    .project-skills{
+        display: flex;
+        gap: 4em;
+        padding: 0;
+        margin-bottom: 2em;
+    }
+    .select-options{
+      display: none;
+    }
   /* End of Projects Section */
 
   /* Contacts Section */
@@ -207,11 +216,18 @@ section{
     
   }
 
-  .project-images{
-      padding: 0;
-      max-width: 100%;
+  /* Projects Section */
+    .project-images{
+        padding: 0;
+        max-width: 100%;
     }
-  
+    .project-skills, .select-options{
+        display: flex;
+        gap: 4em;
+        padding: 0;
+        margin-bottom: 2em;
+    }
+  /* End of Projects Section */
   /* Contact Section */
     .contact{
       display: flex;
