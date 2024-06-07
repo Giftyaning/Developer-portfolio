@@ -16,6 +16,7 @@ body {
   height: auto;
   max-width: 1200px;
   padding: .5em;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 section{
@@ -104,9 +105,10 @@ section{
     display: block;
     max-height: 45em;
   }
-  .name, .underline, .project-contact,  .select-options li{
+  .underline, .project-contact,  .select-options li{
     border: 0;
     border-bottom: 3px solid #4ee1a0;
+    padding: .5em 0;
   }
   .hero-contact{
     background-color: chocolate;
