@@ -104,8 +104,13 @@ section{
     display: block;
     max-height: 45em;
   }
-  .name{
+  .name, .underline, .project-contact,  .select-options li{
+    border: 0;
     border-bottom: 3px solid #4ee1a0;
+  }
+  .hero-contact{
+    background-color: chocolate;
+    
   }
   .description{
     width: 100%;
@@ -157,10 +162,7 @@ section{
     .select-options{
       display: none;
     }
-    .select-options li{
-      border: 0;
-      border-bottom:1px solid #4ee1a0;
-    }
+  
   /* End of Projects Section */
 
   /* Contacts Section */
