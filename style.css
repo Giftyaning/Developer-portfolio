@@ -153,6 +153,8 @@ section{
     .contact{
       display: flex;
       gap: 2em;
+      background-color: rgb(151, 151, 151, .05);
+      padding: .5em;
     }
     .contact-description{
       max-width: 38em;
@@ -164,13 +166,21 @@ section{
     }
     .contact-form input, textarea{
       border: 0;
-      border-bottom: 1px solid rgb(164, 34, 34);
-      background-color: rgb(52, 54, 51, .5);
+      border-bottom: 1px solid rgb(246, 246, 246);
+      background-color: rgb(52, 54, 51, 0);
+      padding: 2em;
     }
-
     .button-container{
       display: flex;
       justify-content: flex-end;
+      margin-top: 1.5em;
+    }
+    .button-container button{
+      padding: 1em;
+      border: 0;
+      border-bottom: 1px solid #4ee1a0;
+      background-color: rgb(52, 54, 51, 0);
+      color: #ffff;
     }
   /* End of Contacts Section */
 
