@@ -75,6 +75,9 @@ section{
   #hover-effect:hover{
     color: var(--green-color);
   }
+  .socials img:hover{
+    filter: brightness(0) saturate(100%) invert(80%) sepia(74%) saturate(497%) hue-rotate(94deg) brightness(100%) contrast(86%);
+  }
 
 /* End of Typography */
 
