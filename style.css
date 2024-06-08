@@ -45,12 +45,21 @@ section{
     font-size: clamp(1.7rem, 2vw, 1rem);
   }
   
-
   /* Paragraphs */
   p {
     font-size: clamp(1.4rem, 2vw, 1rem);
     font-weight: 100;
     opacity: .5;
+  }
+
+  a, a:visited, a:active, a:hover, a:focus {
+    color: inherit; 
+    text-decoration: none; 
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    margin: 0;
+    outline: none; 
   }
 
   :root {
@@ -60,10 +69,11 @@ section{
     --dark-grey-color: #242424;
     --grey-color: #d9d9d9;
     --black-color: #151515;
+  }
 
-    /* Image sizes */
-
-    /* Icons sizes */
+  /* Hover Effect */
+  #hover-effect:hover{
+    color: var(--green-color);
   }
 
 /* End of Typography */
@@ -90,11 +100,11 @@ section{
     justify-content: space-evenly;
     gap: 1em;
   }
-
   .mobile-profile, .tablet-profile{
     display: none;
   }
   /* End of Navbar */
+
 
   /* Main contents */
   .main-content{
@@ -105,15 +115,12 @@ section{
     display: block;
     max-height: 45em;
   }
-  .underline, .project-contact,  .select-options li{
+  .underline, .project-contact,  .select-options li, .select-options-desktop li{
     border: 0;
     border-bottom: 3px solid #4ee1a0;
     padding: .5em 0;
   }
-  .hero-contact{
-    background-color: chocolate;
-    
-  }
+  
   .description{
     width: 100%;
     display: flex;
@@ -151,7 +158,7 @@ section{
       justify-content: space-between;
       align-items: center;
     }
-    .project #small-thumbnail{
+    #small-thumbnail{
       display: none;
     }
     .project-skills{
@@ -161,10 +168,36 @@ section{
         margin-bottom: 2em;
         opacity: .5;
     }
+    .project-image-container {
+      position: relative;
+      overflow: hidden;  
+      width: 100%;
+    }
+    .project-image-container .select-options-desktop {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1em;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      gap: 1em; 
+      width: 100%;
+      height: 100%;
+      color: #fff; 
+    }
+    .project-image-container:hover .select-options-desktop {
+      display: flex;
+      flex-direction: column;
+    }
     .select-options{
       display: none;
     }
-  
   /* End of Projects Section */
 
   /* Contacts Section */
@@ -235,6 +268,9 @@ section{
       gap: 4em;
       padding: 0;
       margin-bottom: 2em;
+    }
+    .project-image-container .select-options-desktop{
+      display: none !important;
     }
   /* End of Projects Section */
 
@@ -326,7 +362,9 @@ section{
       padding: 0;
       margin-bottom: 2em;
     }
-   
+    .project-image-container .select-options-desktop{
+      display: none !important;
+    }
   /* End of Projects Section */
 
 
