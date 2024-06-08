@@ -113,8 +113,8 @@ section{
 /* Circle pattern */
 .circle-pattern{
   position: absolute;
-  left: 42em;
-  top: 32em;
+  left: 57%;
+  top: 69%;
 }
 /* End of Circle pattern */
 
@@ -280,6 +280,18 @@ section{
 
 /* Tablet View */
 @media (max-width: 1024px) and (min-width: 768px) {
+    /* Background-images */
+  #bottom{
+    top: 95%;
+  }
+  #right{
+      top: 33%;
+      left: 50%;
+  }
+  /* End of Background-images*/
+  .circle-pattern{
+    left: 94%;
+  }
   /* Profile images */
   .tablet-profile{
     display: block;
@@ -335,6 +347,19 @@ section{
 
 /* MOBILE VIEW */
 @media (max-width: 768px) {
+  /* Background-images */
+  #bottom{
+    top: 95%;
+  }
+  #right{
+    top: 165em;
+    left: 15em;
+  }
+  /* End of Background-images*/
+  .circle-pattern{
+    left: 92%;
+    top: 30%;
+  }
   /* Navbar */
   nav{
     flex-direction: column;
