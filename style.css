@@ -110,6 +110,14 @@ section{
 }
 /* End of Backgroung images */
 
+/* Circle pattern */
+.circle-pattern{
+  position: absolute;
+  left: 42em;
+  top: 32em;
+}
+/* End of Circle pattern */
+
 
 /* Hero Section */
   .hero{
