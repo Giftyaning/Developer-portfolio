@@ -10,13 +10,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .container{
-  height: auto;
   max-width: 1200px;
   padding: .5em;
-  font-family: "Space Grotesk", sans-serif;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 section{
@@ -64,7 +70,7 @@ section{
 
   :root {
     /* Colors */
-    --white-color: #ffff;
+    --white-color: #ffff; 
     --green-color: #4ee1a0;
     --dark-grey-color: #242424;
     --grey-color: #d9d9d9;
@@ -82,11 +88,32 @@ section{
 /* End of Typography */
 
 
-/* Desktop view */
+/* Background images */
+.background-image{
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  left: -10em;
+  top: 14em;
+}
+.background-image img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+#bottom{
+  top: 235em;
+}
+#right{
+  top: 85em;
+  left: 55em;
+}
+/* End of Backgroung images */
+
 
 /* Hero Section */
   .hero{
-    height: auto;
+    position: relative;
     width: 100%;
     padding: .2em;
   }
@@ -97,6 +124,10 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  nav, .main-content {
+    position: relative;
+    z-index: 1; 
   }
   .socials{
     display: flex;
